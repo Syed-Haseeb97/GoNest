@@ -1,0 +1,6 @@
+{
+  "name": "GoNest",
+  "description": "Smarter Daily Commutes. Connecting students, teachers, office workers, and daily commuters for affordable monthly shared rides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
