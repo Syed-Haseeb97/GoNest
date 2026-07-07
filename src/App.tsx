@@ -159,18 +159,44 @@ function AppContent() {
     }).format(localAmount);
   };
 
-  const handleWaitlistSubmit = (e: React.FormEvent) => {
+  const handleWaitlistSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setWaitlistError("");
+
+    // Email validation
     if (!waitlistEmail || !waitlistEmail.includes("@")) {
       setWaitlistError("Please enter a valid email address.");
       return;
     }
+
     setWaitlistLoading(true);
-    setTimeout(() => {
+
+    try {
+      // Submit to Formspree
+      const response = await fetch("https://formspree.io/f/mvzjyvyg", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: waitlistEmail,
+        }),
+      });
+
+      if (response.ok) {
+        // Success: clear input and show success message
+        setWaitlistEmail("");
+        setWaitlistSubmitted(true);
+      } else {
+        // Server error
+        setWaitlistError("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      // Network error or other issues
+      setWaitlistError("Something went wrong. Please try again.");
+    } finally {
       setWaitlistLoading(false);
-      setWaitlistSubmitted(true);
-    }, 1200);
+    }
   };
 
   // Waitlist States for Launching Soon Section
@@ -1829,9 +1855,9 @@ function AppContent() {
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white">You're on the list!</h3>
+                  <h3 className="text-lg font-bold text-white">🎉 You're on the GoNest waitlist!</h3>
                   <p className="text-xs text-slate-400 mt-1 max-w-xs mx-auto">
-                    We've registered <strong className="text-slate-200">{waitlistEmail}</strong>. You'll receive priority matching access, early pilot runs, and exclusive updates.
+                    We'll notify you before launch. You'll receive priority matching access, early pilot runs, and exclusive updates.
                   </p>
                 </div>
                 <button
