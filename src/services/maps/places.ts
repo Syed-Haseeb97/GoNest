@@ -30,7 +30,6 @@ export const getPlaceSuggestions = async (input: string): Promise<PlaceSuggestio
         placeId: p.place_id
       }));
     } catch (e) {
-      console.warn("Google Places Autocomplete failed, using offline fallback", e);
     }
   }
 

@@ -133,7 +133,6 @@ export default function ProfileSetup({ userEmail = "commuter@gonest.com", onSave
     };
 
     saveProfile().catch((err: any) => {
-      console.error(err);
       setErrorMessage(err.message || "Failed to update profile details.");
       setIsLoading(false);
     });

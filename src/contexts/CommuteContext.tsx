@@ -46,7 +46,6 @@ export const CommuteProvider: React.FC<{ children: React.ReactNode }> = ({ child
       }
       setMatches(matchesMap);
     } catch (err) {
-      console.error("Error refreshing commutes", err);
     } finally {
       setLoading(false);
     }

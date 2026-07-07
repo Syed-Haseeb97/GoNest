@@ -15,7 +15,6 @@ export const sendInAppNotification = async (userId: string, title: string, messa
 // Request notification permission and get token
 export const requestPushNotificationToken = async (): Promise<string | null> => {
   if (!("Notification" in window)) {
-    console.log("This browser does not support desktop notification");
     return null;
   }
   

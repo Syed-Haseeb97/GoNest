@@ -69,7 +69,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const sub = await getSubscription(user.uid);
       setUserSubscription(sub);
     } catch (err) {
-      console.error("Error fetching user profile/subscription", err);
     }
   };
 

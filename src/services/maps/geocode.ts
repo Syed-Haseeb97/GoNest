@@ -26,7 +26,6 @@ export const geocodeAddress = async (address: string): Promise<GeocodeResult> =>
         address: result.formatted_address
       };
     } catch (e) {
-      console.warn("Geocoding failed, using deterministic mock coordinates", e);
     }
   }
 

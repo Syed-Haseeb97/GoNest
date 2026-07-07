@@ -357,7 +357,6 @@ function AppContent() {
       <ProfileSetup 
         userEmail={userEmail || "commuter@gonest.com"}
         onSave={(profileData) => {
-          console.log("Profile Data Saved:", profileData);
           setCurrentView("create-commute");
         }}
         onBackToOnboarding={() => setCurrentView("onboarding")}
@@ -370,7 +369,6 @@ function AppContent() {
       <CreateCommute 
         onBack={() => setCurrentView("profile-setup")}
         onSuccess={(commuteDetails) => {
-          console.log("Commute Setup Complete:", commuteDetails);
           setCommuteData(commuteDetails);
           setCurrentView("review-confirm");
         }}
@@ -399,7 +397,6 @@ function AppContent() {
           setCurrentView("landing");
         }}
         onSelectCohort={(cohortDetails) => {
-          console.log("Selected Cohort:", cohortDetails);
           setSelectedCohort(cohortDetails);
           setCurrentView("match-details");
         }}
@@ -525,7 +522,6 @@ function AppContent() {
       <PauseCommutePage 
         onBack={() => setCurrentView("dashboard")}
         onPauseSuccess={(details) => {
-          console.log("Commute paused details:", details);
           setCurrentView("dashboard");
         }}
       />

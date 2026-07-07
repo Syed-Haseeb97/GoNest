@@ -86,7 +86,6 @@ export const loginWithGoogle = async () => {
       await createUserDoc(user.uid, userData);
     }
   } catch (err) {
-    console.error("Error creating google user doc", err);
   }
   return user;
 };

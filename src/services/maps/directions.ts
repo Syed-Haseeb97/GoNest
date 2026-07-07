@@ -43,7 +43,6 @@ export const getRouteDirections = async (
         routePolyline: response.routes[0].overview_polyline
       };
     } catch (e) {
-      console.warn("Directions calculation failed, using fallback estimate", e);
     }
   }
 
