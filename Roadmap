@@ -1,1 +1,100 @@
+# GoNest Roadmap
 
+GoNest is a subscription-based recurring commute platform designed to simplify daily transportation for students, professionals, teachers, and everyday commuters.
+
+Instead of booking rides every day, users create recurring commute plans while drivers receive predictable passengers and more consistent earnings.
+
+---
+
+# 🚀 Vision
+
+Build the world's most trusted recurring commute platform by making daily travel simple, reliable, and efficient.
+
+---
+
+# ✅ Phase 1 — Foundation (Completed)
+
+- Startup idea finalized
+- Brand identity created
+- GitHub repository established
+- Landing page launched
+- Waitlist system implemented
+- Portfolio integration completed
+
+---
+
+# 🚧 Phase 2 — Minimum Viable Product (MVP)
+
+## User Features
+
+- User registration
+- Secure login
+- Create recurring commute schedules
+- Edit recurring schedules
+- Cancel recurring subscriptions
+- View upcoming rides
+- Ride history
+
+## Driver Features
+
+- Driver registration
+- Accept recurring passengers
+- Weekly schedule management
+- Earnings overview
+
+---
+
+# 📍 Phase 3 — Platform Features
+
+- Smart rider-driver matching
+- Google Maps integration
+- Live trip tracking
+- Notifications and reminders
+- Ratings and reviews
+- Payment integration
+- Subscription management
+
+---
+
+# 📱 Phase 4 — Mobile Experience
+
+- Android application
+- iOS application
+- Push notifications
+- Improved mobile experience
+
+---
+
+# 🌍 Long-Term Vision
+
+GoNest aims to become the preferred recurring transportation platform for:
+
+- Students
+- Office employees
+- Teachers
+- Colleges & Universities
+- Companies
+- Hospitals
+- Daily commuters worldwide
+
+The goal is to reduce the daily hassle of booking transportation while providing drivers with predictable demand and stable income opportunities.
+
+---
+
+# 🤖 Development Philosophy
+
+GoNest is developed using modern software engineering practices and AI-assisted development.
+
+AI tools are used to accelerate development, improve productivity, and solve engineering challenges, while all product vision, architecture, and decision-making remain human-led.
+
+---
+
+# 📅 Status
+
+**Current Stage:** MVP Development
+
+The project is actively evolving, and this roadmap will be updated as new milestones are achieved.
+
+---
+
+_Last Updated: July 2026_
