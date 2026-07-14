@@ -275,22 +275,22 @@ function AppContent() {
     {
       from: "Greenwood Suburbs",
       to: "Downtown Financial District",
-      distance: 35,
+      distance: 25,
       commuters: ["Alex M. (Financial Analyst)", "Sarah T. (Consultant)", "Elena R. (Tech Recruiter)"],
       driver: "James D. (Verified Professional, Tesla Model Y)",
-      departTime: "7:45 AM",
-      returnTime: "5:30 PM",
-      price: 18200
+      departTime: "8:00 AM",
+      returnTime: "5:00 PM",
+      price: 4200
     },
     {
-      from: "Westside Family Village",
-      to: "State University South Campus",
-      distance: 20,
-      commuters: ["Jordan P. (Junior, Engineering)", "Kaitlyn S. (Senior, Arts)", "Marcus B. (Grad Student)"],
-      driver: "Prof. Chloe G. (Verified Faculty, Prius)",
+      from: "Charminar",
+      to: "nampally metro station",
+      distance: 5.2,
+      commuters: ["Haseeb P. (Junior, Engineering)", "Toaim S. (Senior, Arts)", "Ahmed B. (Grad Student)"],
+      driver: "Muzammil G. (Verified Faculty, Prius)",
       departTime: "8:15 AM",
       returnTime: "4:00 PM",
-      price: 10400
+      price: 8500
     },
     {
       from: "Eastgate Residential Park",
@@ -309,18 +309,18 @@ function AppContent() {
     // Fare is exactly 13 rps per km for GoNest shared rides
     const goNestFarePerKm = 13;
     const gasAndMaintenancePerKm = 25; // in Rupees/rps
-    let monthlyParking = 12000; // in Rupees/rps
-    let monthlyTolls = 4000; // in Rupees/rps
+    let monthlyParking = 2000; // in Rupees/rps
+    let monthlyTolls = 1000; // in Rupees/rps
 
     if (calculatorRole === "student") {
-      monthlyParking = 3000;
-      monthlyTolls = 1000;
+      monthlyParking = 1000;
+      monthlyTolls = 500;
     } else if (calculatorRole === "teacher") {
-      monthlyParking = 4000;
-      monthlyTolls = 2000;
+      monthlyParking = 4200;
+      monthlyTolls = 1000;
     } else if (calculatorRole === "worker") {
-      monthlyParking = 12000;
-      monthlyTolls = 4000;
+      monthlyParking = 2000;
+      monthlyTolls = 500;
     }
 
     const totalKmsPerMonth = commuteDistance * 2 * daysPerMonth;
